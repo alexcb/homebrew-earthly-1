@@ -13,8 +13,9 @@ class Earthly < Formula
 
   bottle do
     root_url "https://github.com/alexcb/homebrew-earthly-1/releases/download/earthly-0.5.1"
-    sha256 cellar: :any_skip_relocation, catalina:     "bba2a1b7f68307da47750b66148dbf949379c6b118cb842834be972ae145f8fd"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "a0c59d6d164227fa70b7a28dce04dd5bc5c3e35938d989da13900e7f391a7b4a"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, catalina:     "6cf3f0da34dc5d8180903e7aec9ba6e73f3d8ebe077328ae7d4587533b4c9e0b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "8b97fb6e253235c49a0aa9ca0faa4348afe7e8bf42ad6ab5dae6c3a6d5e382ee"
   end
 
   depends_on "go" => :build
