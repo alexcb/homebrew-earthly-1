@@ -12,10 +12,9 @@ class Earthly < Formula
   end
 
   bottle do
-    root_url "https://github.com/alexcb/homebrew-earthly-1/releases/download/earthly-0.5.1"
-    rebuild 2
-    sha256 cellar: :any_skip_relocation, catalina:     "7da5623ed41e0f3b6756237b86f4065af1b5d07636dfddcd0307d37dd10cdda3"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "753ec6790e7708770ac5573c6b935b19ba65112c135d5e1c8c7fcdad001d0428"
+    root_url "https://github.com/alexcb/homebrew-earthly-1/releases/download/earthly-0.5.10"
+    sha256 cellar: :any_skip_relocation, catalina:     "ddb2017e99472d169f707a48072a22e1532b78ef2789777c68bbff4a87721712"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "70d90a7a0e7466af1c65d464f12c8d1cd2c3a558ed35dc5740b3cdc932b14ad7"
   end
 
   depends_on "go" => :build
